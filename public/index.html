@@ -9,7 +9,7 @@
   <link rel="icon" href="/assets/logo.png" />
   <link rel="preload" as="image" href="/assets/assistant.png" />
   <link rel="preload" as="image" href="/assets/hands.png" />
-  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="stylesheet" href="/css/styles.css?v=4-i18n-demo-20260617" />
 </head>
 <body>
   <div class="noise"></div>
@@ -35,11 +35,15 @@
         <button class="lang-btn" data-lang="kk">KZ</button>
         <button class="lang-btn" data-lang="en">EN</button>
       </div>
-      <a class="ghost-btn sm" href="/admin" data-i18n="nav.login">Войти</a>
       <a class="primary-btn sm" href="#lead" data-i18n="nav.cta">Начать бесплатно</a>
       <button class="menu-btn" id="menuBtn" aria-label="Open menu"><span></span><span></span></button>
     </div>
     <div class="mobile-menu" id="mobileMenu">
+      <div class="mobile-lang-switch" aria-label="Language switcher">
+        <button class="lang-btn active" data-lang="ru">RU</button>
+        <button class="lang-btn" data-lang="kk">KZ</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
       <a href="#features" data-i18n="nav.features">Возможности</a>
       <a href="#how" data-i18n="nav.how">Как это работает</a>
       <a href="#demo" data-i18n="nav.demo">Демо</a>
@@ -179,7 +183,7 @@
         <div class="section-head reveal">
           <span class="section-kicker" data-i18n="pricing.kicker">Тарифы</span>
           <h2 data-i18n="pricing.title">Прозрачная модель для запуска и масштабирования</h2>
-          <p data-i18n="pricing.text">Данные тарифов редактируются в админке без изменения кода.</p>
+          <p data-i18n="pricing.text">7 дней бесплатно: подключим демо-сценарий, покажем диалоги, склад, акции и контроль исполнения.</p>
         </div>
         <div class="pricing-grid" id="pricingGrid"></div>
       </div>
@@ -218,11 +222,11 @@
           <p data-i18n="lead.text">Оставьте заявку — подготовим демонстрационный сценарий под вашу нишу, ассортимент и каналы коммуникаций.</p>
         </div>
         <form class="lead-form" id="leadForm">
-          <label><span data-i18n="form.name">Имя</span><input name="name" required placeholder="Алина" /></label>
-          <label><span data-i18n="form.phone">Телефон</span><input name="phone" required placeholder="+7 700 000 00 00" /></label>
-          <label><span data-i18n="form.company">Компания</span><input name="company" placeholder="Название бизнеса" /></label>
+          <label><span data-i18n="form.name">Имя</span><input name="name" required placeholder="Алина" data-i18n-placeholder="form.namePh" /></label>
+          <label><span data-i18n="form.phone">Телефон</span><input name="phone" required placeholder="+7 771 996 70 23" data-i18n-placeholder="form.phonePh" /></label>
+          <label><span data-i18n="form.company">Компания</span><input name="company" placeholder="Название бизнеса" data-i18n-placeholder="form.companyPh" /></label>
           <label><span data-i18n="form.plan">Интересующий тариф</span><select name="plan" id="planSelect"></select></label>
-          <label class="wide"><span data-i18n="form.message">Что хотите автоматизировать?</span><textarea name="message" placeholder="Например: заявки из WhatsApp, склад, CRM, оплата"></textarea></label>
+          <label class="wide"><span data-i18n="form.message">Что хотите автоматизировать?</span><textarea name="message" placeholder="Например: заявки из WhatsApp, склад, CRM, оплата" data-i18n-placeholder="form.messagePh"></textarea></label>
           <button class="primary-btn wide" type="submit" data-i18n="form.submit">Получить бесплатный запуск</button>
           <p class="form-note" id="formNote" data-i18n="form.note">Нажимая кнопку, вы отправляете заявку команде VENSO.</p>
         </form>
@@ -245,19 +249,18 @@
       <div>
         <strong data-i18n="footer.company">Компания</strong>
         <a href="#investors" data-i18n="nav.investors">Инвесторам</a>
-        <a href="/admin" data-i18n="footer.admin">Админка</a>
         <a href="#lead" data-i18n="footer.contact">Контакты</a>
       </div>
       <div>
         <strong data-i18n="footer.support">Связь</strong>
         <a href="mailto:hello@venso.ai">hello@venso.ai</a>
-        <a href="tel:+77001234567">+7 700 123 45 67</a>
+        <a href="tel:+77719967023">+7 771 996 70 23</a>
         <span data-i18n="footer.city">Астана, Казахстан</span>
       </div>
     </div>
     <div class="footer-bottom">© 2026 VENSO. <span data-i18n="footer.rights">Все права защищены.</span></div>
   </footer>
 
-  <script src="/js/app.js" defer></script>
+  <script src="/js/app.js?v=4-i18n-demo-20260617" defer></script>
 </body>
 </html>
