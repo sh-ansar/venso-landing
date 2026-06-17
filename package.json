@@ -1,0 +1,20 @@
+{
+  "name": "venso-landing",
+  "version": "1.0.0",
+  "description": "VENSO premium AI sales landing with multilingual frontend, animated demo and tariff admin backend.",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "venso",
+    "ai-sales",
+    "landing",
+    "admin",
+    "no-dependencies"
+  ],
+  "author": "VENSO",
+  "license": "UNLICENSED"
+}
